@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все бисквиты - BestCuit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="log.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="biscuits.html" class="nav-link active">Все бисквиты</a></li>
+                        <li><a href="calculator.html" class="nav-link">Калькулятор</a></li>
+                        <li><a href="tasks.html" class="nav-link">Мои работы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Сборник рецептов</h1>
+                <p>12 классических рецептов для идеальной выпечки</p>
+            </div>
+
+            <!-- Статистика сложности -->
+            <div class="difficulty-stats">
+                <div class="stat-item">
+                    <span class="stat-count" id="count-easy">6</span>
+                    <span class="stat-label">Лёгких рецептов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" id="count-medium">5</span>
+                    <span class="stat-label">Средних рецептов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" id="count-hard">2</span>
+                    <span class="stat-label">Сложных рецептов</span>
+                </div>
+            </div>
+
+            <!-- Фильтры -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все бисквиты</button>
+                <button class="filter-btn" data-filter="easy">Лёгкие</button>
+                <button class="filter-btn" data-filter="medium">Средние</button>
+                <button class="filter-btn" data-filter="hard">Сложные</button>
+            </div>
+
+            <!-- Сетка бисквитов -->
+            <div class="biscuits-grid full-grid">
+                <!-- Классический бисквит -->
+                <div class="biscuit-card" data-difficulty="easy">
+                    <div class="biscuit-container">
+                        <img src="clas-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Классический бисквит</h3>
+                        <p>Универсальная основа для большинства тортов. Нежный, воздушный, хорошо пропитывается сиропами и кремами.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty easy">Лёгкий</span>
+                            <span class="time">⏱️ 40 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 4 яйца</span>
+                            <span>🕒 Выпечка: 25 мин</span>
+                        </div>
+                        <a href="biscuit-classic.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Генуэзский бисквит -->
+                <div class="biscuit-card" data-difficulty="medium">
+                    <div class="biscuit-container">
+                        <img src="gen-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Генуэзский бисквит (Génoise)</h3>
+                        <p>Плотный, насыщенный бисквит с маслом. Идеален для многослойных тортов, хорошо держит форму.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="time">⏱️ 50 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 5 яиц</span>
+                            <span>🕒 Выпечка: 30 мин</span>
+                        </div>
+                        <a href="biscuit-genoise.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит a la cuillere -->
+                <div class="biscuit-card" data-difficulty="medium">
+                    <div class="biscuit-container">
+                        <img src="lac-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит a la cuillere</h3>
+                        <p>Лёгкий бисквит для десертов. Мягкая текстура, отлично сочетается с фруктами и муссами.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="time">⏱️ 35 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 3 яйца</span>
+                            <span>🕒 Выпечка: 20 мин</span>
+                        </div>
+                        <a href="biscuit-cuillere.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Шифоновый бисквит -->
+                <div class="biscuit-card" data-difficulty="medium">
+                    <div class="biscuit-container">
+                        <img src="chif-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Шифоновый бисквит</h3>
+                        <p>Невероятно легкий и воздушный за счет растительного масла. Мягкий, влажный, с нежной текстурой.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="time">⏱️ 55 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 5 яиц</span>
+                            <span>🕒 Выпечка: 45 мин</span>
+                        </div>
+                        <a href="biscuit-chiffon.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит Дакуаз -->
+                <div class="biscuit-card" data-difficulty="hard">
+                    <div class="biscuit-container">
+                        <img src="dac-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит Дакуаз (Dacquoise)</h3>
+                        <p>Миндально-ореховый меренговый бисквит. Хрустящий снаружи, мягкий внутри.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty hard">Сложный</span>
+                            <span class="time">⏱️ 70 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 6 белков</span>
+                            <span>🕒 Выпечка: 40 мин</span>
+                        </div>
+                        <a href="biscuit-dacquoise.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит Джоконда -->
+                <div class="biscuit-card" data-difficulty="hard">
+                    <div class="biscuit-container">
+                        <img src="jok-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит Джоконда (Joconde)</h3>
+                        <p>Миндальный бисквит с тонкой структурой. Идеален для торта "Опера" и сложных десертов.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty hard">Сложный</span>
+                            <span class="time">⏱️ 60 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 4 яйца</span>
+                            <span>🕒 Выпечка: 15 мин</span>
+                        </div>
+                        <a href="biscuit-joconde.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Заварной бисквит -->
+                <div class="biscuit-card" data-difficulty="medium">
+                    <div class="biscuit-container">
+                        <img src="zav-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Заварной бисквит</h3>
+                        <p>Бисквит на заварном тесте. Очень влажный, плотный, с насыщенным вкусом.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="time">⏱️ 80 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 6 яиц</span>
+                            <span>🕒 Выпечка: 50 мин</span>
+                        </div>
+                        <a href="biscuit-choux.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит Pain de gênes -->
+                <div class="biscuit-card" data-difficulty="medium">
+                    <div class="biscuit-container">
+                        <img src="pain-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит Pain de gênes</h3>
+                        <p>Миндальный бисквит с фруктовыми нотками. Плотный, влажный, богат ароматом.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="time">⏱️ 65 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 5 яиц</span>
+                            <span>🕒 Выпечка: 35 мин</span>
+                        </div>
+                        <a href="biscuit-pain-de-genes.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит Эммануль -->
+                <div class="biscuit-card" data-difficulty="easy">
+                    <div class="biscuit-container">
+                        <img src="emm-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит Эммануль</h3>
+                        <p>Лёгкий ванильный бисквит. Нежная текстура, универсальное применение.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty easy">Лёгкий</span>
+                            <span class="time">⏱️ 45 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 4 яйца</span>
+                            <span>🕒 Выпечка: 25 мин</span>
+                        </div>
+                        <a href="biscuit-emmanuel.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит Мадлен -->
+                <div class="biscuit-card" data-difficulty="medium">
+                    <div class="biscuit-container">
+                        <img src="mad-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит Мадлен</h3>
+                        <p>Знаменитый французский бисквит. Нежный, с характерным медовым оттенком.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="time">⏱️ 30 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 3 яйца</span>
+                            <span>🕒 Выпечка: 12 мин</span>
+                        </div>
+                        <a href="biscuit-madeleine.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Масляный бисквит -->
+                <div class="biscuit-card" data-difficulty="easy">
+                    <div class="biscuit-container">
+                        <img src="mas-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Масляный бисквит</h3>
+                        <p>Шикарный бисквит с высоким содержанием масла. Влажный, с насыщенным вкусом.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty easy">Легкий</span>
+                            <span class="time">⏱️ 55 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 4 яйца</span>
+                            <span>🕒 Выпечка: 40 мин</span>
+                        </div>
+                        <a href="biscuit-butter.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Бисквит на желтках -->
+                <div class="biscuit-card" data-difficulty="easy">
+                    <div class="biscuit-container">
+                        <img src="jel-m.png" alt="Бисквит" class="biscuit-image">
+                    </div>
+                    <div class="biscuit-content">
+                        <h3>Бисквит на желтках</h3>
+                        <p>Яркий желтый бисквит с насыщенным вкусом. Идеален для использования оставшихся желтков.</p>
+                        <div class="biscuit-meta">
+                            <span class="difficulty easy">Лёгкий</span>
+                            <span class="time">⏱️ 40 мин</span>
+                        </div>
+                        <div class="biscuit-stats">
+                            <span>🥚 6 желтков</span>
+                            <span>🕒 Выпечка: 25 мин</span>
+                        </div>
+                        <a href="biscuit-yolks.html" class="btn btn-card">Изучить рецепт</a>
+                    </div>
+                </div>
+
+                <!-- Сообщение когда нет результатов -->
+                <div class="no-results-message">
+                    <div class="no-results-content">
+                        <div class="no-results-icon">🍰</div>
+                        <h3>Бисквиты не найдены</h3>
+                        <p>Попробуйте выбрать другую категорию сложности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                    </div>
+                    <p class="footer-tagline">Сборник рецептов идеальных бисквитов</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Бисквиты</h4>
+                        <ul>
+                            <li><a href="biscuits.html">Все рецепты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Инструменты</h4>
+                        <ul>
+                            <li><a href="calculator.html">Калькулятор</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Помощь</h4>
+                        <ul>
+                            <li><a href="mailto:bunchuk.se@edu.spbstu.ru?subject=BestCuit: обратная связь">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2025 BestCuit. Энциклопедия бисквитов.</p>
+                    <p>Сайт создан в учебных целях</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="biscuit.js"></script>
+</body>
+</html>

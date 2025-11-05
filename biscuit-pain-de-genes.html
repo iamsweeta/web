@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бисквит Pain de Gênes - BestCuit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="log.png">
+</head>
+<body data-biscuit-type="pain-de-genes">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="biscuits.html" class="nav-link">Все бисквиты</a></li>
+                        <li><a href="calculator.html" class="nav-link">Калькулятор</a></li>
+                        <li><a href="tasks.html" class="nav-link">Мои работы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <span>→</span>
+                <a href="biscuits.html">Все бисквиты</a>
+                <span>→</span>
+                <span>Бисквит Pain de Gênes</span>
+            </nav>
+
+            <article class="recipe-article">
+                <header class="recipe-header">
+                    <div class="recipe-hero">
+                        <div class="recipe-image-large">
+                            <div class="image-placeholder large">
+                                <img src="pain-l.png" alt="Бисквит Pain de Gênes" width="400" class="biscuit-image-l">
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h1>Бисквит Pain de Gênes</h1>
+                            <p class="recipe-description">Французский миндальный бисквит с насыщенным ореховым вкусом и плотной влажной текстурой. Традиционный десерт из города Ген, известный своим миндальным ароматом и нежной структурой.</p>
+                            
+                            <div class="recipe-meta-grid">
+                                <div class="meta-item">
+                                    <span class="meta-label">Сложность</span>
+                                    <span class="difficulty medium">Средний</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время подготовки</span>
+                                    <span class="meta-value">20 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время выпечки</span>
+                                    <span class="meta-value">40 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Общее время</span>
+                                    <span class="meta-value">60 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Температура</span>
+                                    <span class="meta-value">170°C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="recipe-calculator">
+                    <h2>🧮 Калькулятор ингредиентов</h2>
+                    <div class="calculator-inline">
+                        <div class="calc-controls">
+                            <label for="diameter">Диаметр вашей формы (см):</label>
+                            <div class="input-group">
+                                <input type="number" id="diameter" value="20" min="10" max="40" class="form-input">
+                                <button id="calculate-btn" class="btn btn-primary">Рассчитать</button>
+                            </div>
+                        </div>
+                        <div id="calculation-message" class="calculation-message">
+                            ✓ Ингредиенты успешно пересчитаны для Ø 20 см
+                        </div>
+                    </div>
+                </section>
+
+                <div class="recipe-content-grid">
+                    <section class="ingredients-section">
+                        <h2>🥣 Ингредиенты</h2>
+                        <div class="ingredients-list">
+                            <div class="ingredient-group">
+                                <h3>Основные ингредиенты</h3>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Миндальная мука</span>
+                                    <span class="ingredient-amount" data-base="150">150 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Сахар</span>
+                                    <span class="ingredient-amount" data-base="150">150 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Яйца куриные</span>
+                                    <span class="ingredient-amount" data-base="5">5 шт</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Сливочное масло</span>
+                                    <span class="ingredient-amount" data-base="100">100 г</span>
+                                </div>
+                            </div>
+                            <div class="ingredient-group">
+                                <h3>Дополнительные</h3>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Мука пшеничная</span>
+                                    <span class="ingredient-amount" data-base="50">50 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Разрыхлитель</span>
+                                    <span class="ingredient-amount" data-base="5">5 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Миндальный экстракт</span>
+                                    <span class="ingredient-amount" data-base="5">5 мл</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Соль</span>
+                                    <span class="ingredient-amount" data-base="2">2 г</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="instructions-section">
+                        <h2>👩‍🍳 Способ приготовления</h2>
+                        <div class="instructions-list">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Подготовка ингредиентов</h3>
+                                    <p>Достаньте масло и яйца из холодильника за час до приготовления. Масло растопите и остудите. Муку пшеничную просейте с разрыхлителем и солью.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Смешивание сухих ингредиентов</h3>
+                                    <p>В миске смешайте миндальную муку с сахаром. Тщательно перемешайте венчиком до однородности. Это обеспечит равномерное распределение миндаля в тесте.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Добавление яиц</h3>
+                                    <p>По одному добавьте яйца к миндальной смеси, тщательно перемешивая после каждого. Масса должна стать однородной и слегка посветлеть.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Введение муки и масла</h3>
+                                    <p>Добавьте просеянную пшеничную муку с разрыхлителем, аккуратно перемешайте. Затем влейте растопленное охлажденное масло и миндальный экстракт.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h3>Выпечка</h3>
+                                    <p>Форму смажьте маслом и выстелите пергаментом. Вылейте тесто и разровняйте. Выпекайте в разогретой до 170°C духовке 35-40 минут.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">6</div>
+                                <div class="step-content">
+                                    <h3>Охлаждение и подача</h3>
+                                    <p>Готовый бисквит остудите в форме 10 минут, затем переверните на решетку. Pain de Gênes вкусен как теплым, так и полностью охлажденным.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="recipe-tips">
+                    <h2>💡 Профессиональные советы</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <h3>Качество миндальной муки</h3>
+                            <p>Используйте свежую миндальную муку мелкого помола. Можно приготовить самостоятельно, измельчив миндаль в блендере с частью сахара.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Температура выпечки</h3>
+                            <p>Более низкая температура выпечки позволяет бисквиту равномерно пропечься без подгорания, сохраняя влажную текстуру.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Проверка готовности</h3>
+                            <p>Бисквит готов, когда края отходят от стенок формы, а зубочистка, воткнутая в центр, выходит почти чистой.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Хранение</h3>
+                            <p>Pain de Gênes становится вкуснее на следующий день. Храните в герметичном контейнере при комнатной температуре.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                       <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                    </div>
+                    <p class="footer-tagline">Сборник рецептов идеальных бисквитов</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Бисквиты</h4>
+                        <ul>
+                            <li><a href="biscuits.html">Все рецепты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Инструменты</h4>
+                        <ul>
+                            <li><a href="calculator.html">Калькулятор</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Помощь</h4>
+                        <ul>
+                            <li><a href="mailto:bunchuk.se@edu.spbstu.ru?subject=BestCuit: обратная связь">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2025 BestCuit.</p>
+                    <p>Сайт создан в учебных целях</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

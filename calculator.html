@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор ингредиентов - BestCuit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="log.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="biscuits.html" class="nav-link">Все бисквиты</a></li>
+                        <li><a href="calculator.html" class="nav-link active">Калькулятор</a></li>
+                        <li><a href="tasks.html" class="nav-link">Мои работы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Умный калькулятор ингредиентов</h1>
+                <p>Рассчитайте точное количество ингредиентов для любого диаметра формы</p>
+            </div>
+
+            <div class="calculator-container">
+                <div class="calculator-sidebar">
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="biscuit-type">Выберите бисквит:</label>
+                            <select id="biscuit-type" class="form-select">
+                                <option value="classic">Классический бисквит</option>
+                                <option value="genoise">Генуэзский бисквит</option>
+                                <option value="cuillere">Бисквит a la cuillere</option>
+                                <option value="chiffon">Шифоновый бисквит</option>
+                                <option value="dacquoise">Бисквит Дакуаз</option>
+                                <option value="joconde">Бисквит Джоконда</option>
+                                <option value="choux">Заварной бисквит</option>
+                                <option value="pain-de-genes">Бисквит Pain de gênes</option>
+                                <option value="emmanuel">Бисквит Эммануль</option>
+                                <option value="madeleine">Бисквит Мадлен</option>
+                                <option value="butter">Масляный бисквит</option>
+                                <option value="yolks">Бисквит на желтках</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+    <label for="base-diameter">Исходный диаметр (см):</label>
+        <input type="number" id="base-diameter" class="form-input" value="20" min="1" max="100" step="0.1" placeholder="1-100 см">
+    </div>
+
+    <div class="form-group">
+        <label for="target-diameter">Нужный диаметр (см):</label>
+        <input type="number" id="target-diameter" class="form-input" value="24" min="1" max="100" step="0.1" placeholder="1-100 см">
+    </div>
+
+                        <button id="calculate-btn" class="btn btn-primary btn-large">🧮 Рассчитать</button>
+                    </div>
+
+                    <div class="calculator-info">
+                        <h3>Как это работает?</h3>
+                        <p>Калькулятор использует формулу площади круга: πr². При увеличении диаметра в 2 раза, количество ингредиентов увеличивается в 4 раза.</p>
+                        <div class="formula">
+                            Коэффициент = (Новый диаметр ÷ Исходный диаметр)²
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="results-header">
+                        <h2>Результаты расчета</h2>
+                        <div class="diameter-comparison">
+                            <span class="diameter-from">Ø 20 см</span>
+                            <span class="arrow">→</span>
+                            <span class="diameter-to">Ø 24 см</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients-table">
+                        <div class="table-header">
+                            <span>Ингредиент</span>
+                            <span>Исходное</span>
+                            <span>Новое</span>
+                            <span>Изменение</span>
+                        </div>
+                        <div id="results-container" class="table-body">
+                            <div class="no-results">
+                                <p>Выберите бисквит и нажмите "Рассчитать"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-tips">
+                        <h3>💡 Советы по использованию</h3>
+                        <ul>
+                            <li>Для яиц используйте округленные значения (3.2 ≈ 3 яйца)</li>
+                            <li>Мелкие ингредиенты (соль, разрыхлитель) можно не изменять</li>
+                            <li>Всегда предварительно разогревайте духовку</li>
+                            <li>Время выпечки может немного отличаться</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                       <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                    </div>
+                    <p class="footer-tagline">Сборник рецептов идеальных бисквитов</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Бисквиты</h4>
+                        <ul>
+                            <li><a href="biscuits.html">Все рецепты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Инструменты</h4>
+                        <ul>
+                            <li><a href="calculator.html">Калькулятор</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Помощь</h4>
+                        <ul>
+                            <li><a href="mailto:bunchuk.se@edu.spbstu.ru?subject=BestCuit: обратная связь">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2025 BestCuit.</p>
+                    <p>Сайт создан в учебных целях</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

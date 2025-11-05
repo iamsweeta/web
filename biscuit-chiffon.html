@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифоновый бисквит - BestCuit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="log.png">
+</head>
+<body data-biscuit-type="chiffon">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="biscuits.html" class="nav-link">Все бисквиты</a></li>
+                        <li><a href="calculator.html" class="nav-link">Калькулятор</a></li>
+                        <li><a href="tasks.html" class="nav-link">Мои работы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <span>→</span>
+                <a href="biscuits.html">Все бисквиты</a>
+                <span>→</span>
+                <span>Шифоновый бисквит</span>
+            </nav>
+
+            <article class="recipe-article">
+                <header class="recipe-header">
+                    <div class="recipe-hero">
+                        <div class="recipe-image-large">
+                            <div class="image-placeholder large">
+                                <img src="chif-l.png" alt="Бисквит" width="400" class="biscuit-image-l">
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h1>Шифоновый бисквит</h1>
+                            <p class="recipe-description">Невероятно воздушный и легкий американский бисквит с растительным маслом. Имеет влажную текстуру и хорошо держит форму. Идеален для высоких тортов.</p>
+                            
+                            <div class="recipe-meta-grid">
+                                <div class="meta-item">
+                                    <span class="meta-label">Сложность</span>
+                                    <span class="difficulty medium">Средний</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время подготовки</span>
+                                    <span class="meta-value">20 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время выпечки</span>
+                                    <span class="meta-value">55 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Общее время</span>
+                                    <span class="meta-value">75 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Температура</span>
+                                    <span class="meta-value">160°C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="recipe-calculator">
+                    <h2>🧮 Калькулятор ингредиентов</h2>
+                    <div class="calculator-inline">
+                        <div class="calc-controls">
+                            <label for="diameter">Диаметр вашей формы (см):</label>
+                            <div class="input-group">
+                                <input type="number" id="diameter" value="20" min="10" max="40" class="form-input">
+                                <button id="calculate-btn" class="btn btn-primary">Рассчитать</button>
+                            </div>
+                        </div>
+                        <div id="calculation-message" class="calculation-message">
+                            ✓ Ингредиенты успешно пересчитаны для Ø 20 см
+                        </div>
+                    </div>
+                </section>
+
+                <div class="recipe-content-grid">
+                    <section class="ingredients-section">
+                        <h2>🥣 Ингредиенты</h2>
+                        <div class="ingredients-list">
+                            <div class="ingredient-group">
+                                <h3>Сухие ингредиенты</h3>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Мука пшеничная</span>
+                                    <span class="ingredient-amount" data-base="200">200 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Сахар</span>
+                                    <span class="ingredient-amount" data-base="150">150 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Разрыхлитель</span>
+                                    <span class="ingredient-amount" data-base="10">10 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Соль</span>
+                                    <span class="ingredient-amount" data-base="3">3 г</span>
+                                </div>
+                            </div>
+                            <div class="ingredient-group">
+                                <h3>Жидкие ингредиенты</h3>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Яйца куриные</span>
+                                    <span class="ingredient-amount" data-base="5">5 шт</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Растительное масло</span>
+                                    <span class="ingredient-amount" data-base="120">120 мл</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Вода холодная</span>
+                                    <span class="ingredient-amount" data-base="120">120 мл</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Ванильный экстракт</span>
+                                    <span class="ingredient-amount" data-base="10">10 мл</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="instructions-section">
+                        <h2>👩‍🍳 Способ приготовления</h2>
+                        <div class="instructions-list">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Подготовка сухих ингредиентов</h3>
+                                    <p>Просейте муку с разрыхлителем и солью. Добавьте сахар и тщательно перемешайте венчиком. Разделите яйца на белки и желтки.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Смешивание жидкой части</h3>
+                                    <p>В отдельной миске смешайте желтки, растительное масло, холодную воду и ванильный экстракт. Взбейте до однородности.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Соединение смесей</h3>
+                                    <p>Соедините жидкую смесь с сухими ингредиентами. Аккуратно перемешайте до однородности, но не переусердствуйте.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Взбивание белков</h3>
+                                    <p>Белки взбейте с щепоткой соли до жестких пиков. Аккуратно введите белковую массу в тесто, перемешивая лопаткой снизу вверх.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h3>Выпечка</h3>
+                                    <p>Вылейте тесто в не смазанную форму для шиффона (с полой серединой). Выпекайте в разогретой до 160°C духовке 50-55 минут.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">6</div>
+                                <div class="step-content">
+                                    <h3>Охлаждение</h3>
+                                    <p>Достаньте бисквит из духовки и сразу переверните форму вверх дном. Полностью охладите в таком положении перед извлечением.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="recipe-tips">
+                    <h2>💡 Профессиональные советы</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <h3>Специальная форма</h3>
+                            <p>Шиффон пекут в форме с трубкой посередине - это обеспечивает равномерное пропекание высокого бисквита.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Не смазывайте форму!</h3>
+                            <p>Форму для шиффона не смазывают - тесто должно "карабкаться" по стенкам во время выпечки.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Переворачивание</h3>
+                            <p>Обязательно переверните бисквит сразу после выпечки - это предотвратит оседание.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Растительное масло</h3>
+                            <p>Используйте рафинированное масло без запаха. Оно дает влажную текстуру, которую невозможно достичь со сливочным маслом.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                    </div>
+                    <p class="footer-tagline">Энциклопедия идеальных бисквитов</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Бисквиты</h4>
+                        <ul>
+                            <li><a href="biscuits.html">Все рецепты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Инструменты</h4>
+                        <ul>
+                            <li><a href="calculator.html">Калькулятор</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Помощь</h4>
+                        <ul>
+                            <li><a href="mailto:bunchuk.se@edu.spbstu.ru?subject=BestCuit: обратная связь">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2025 BestCuit.</p>
+                    <p>Сайт создан в учебных целях</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

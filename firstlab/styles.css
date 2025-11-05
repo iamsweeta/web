@@ -1,0 +1,278 @@
+#display {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(200, 220, 200);
+}
+
+#border {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+#image {
+  position: absolute;
+  left: 45px;
+  top: 15px;
+  width: 100px;
+  height: 95px;
+}
+
+#scallop {
+  position: absolute;
+  inset: -6px;
+  background:
+    radial-gradient(circle 8px at 8px 16px, transparent 4px, #fff 6px 8px, transparent 8px) left 0 top -8px / 16px 16px repeat-x,
+    radial-gradient(circle 8px at 16px 8px, transparent 4px, #fff 6px 8px, transparent 8px) left -8px top 0 / 16px 16px repeat-y,
+    radial-gradient(circle 8px at 0px 8px, transparent 4px, #fff 6px 8px, transparent 8px) right -8px top 0px / 16px 16px repeat-y;
+}
+
+#scallop::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    width: 120px; /* ширина обрезки */
+    height: 10px;
+    background: rgb(200, 220, 200); /* цвет фона контейнера */
+    z-index: 1;
+}
+
+#inner-display {
+  overflow: hidden;
+  position: absolute;
+  inset: 0px;
+  border: 3px solid #fff;
+  border-radius: 0px;
+  background:
+    radial-gradient(110px 80px at 30% 30%, rgba(255,255,255,.8), rgba(255, 255, 255, 0) 65%) no-repeat,
+    linear-gradient(#6699ff, #4b82d0 50%, #3366b3 100%);
+}
+
+#sun {
+  position: absolute;
+  width: 30px; 
+  height: 30px; 
+  top: -7px;   
+  right: -7px;   /* */
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #fff6a6 0 30%, #ffd84e 50%,
+      #ffcc33 70%, #f5b400 90%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+#teapot-lid {
+  position: absolute;  z-index: 2;
+  left: 25px;
+  bottom: 37px;
+  width: 38px;
+  height: 25px;
+  border-radius: 50% / 65% 65% 35% 35%;
+  background:
+    radial-gradient(circle at 30% 28%, #f3cccc 0 25%, #f78e94 60%, #d33330 95%);
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.08);
+}
+
+#teapot-body {
+  position: absolute;  z-index: 3;
+  left: 19px;
+  bottom: 9px;
+  width: 50px;
+  height: 43px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 34% 30%, #ffe6e5 0 28%, #ff9aa0 48%, #e34a48 68%, #b92f2e 100%);
+  box-shadow: inset 0 -4px 0 rgba(0,0,0,.08);
+}
+
+#teapot-handle {
+  position: absolute; z-index: 1;
+  left: 40px;
+  bottom: 59px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 40% 35%, #ffb3b3 0 45%, #de4940 100%);
+  box-shadow: 0 1px 0 rgba(0,0,0,.12);
+}
+
+#teapot-spout {
+  position: absolute;
+  left: 7px;
+  bottom: 35px;
+  width: 22px;
+  height: 6px;
+  background: linear-gradient(#ff6e6d, #e34944);
+  transform: rotate(30deg);
+  z-index: 2;
+}
+
+#teapot-curve {
+  position: absolute;
+  right: 15px;
+  bottom: 27px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, transparent calc(100% - 3px), #c04536 0 100%);
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+
+#surface {
+  position: absolute;
+  left: 48px;
+  bottom: 11px;
+  width: 100px;
+  height: 91px;
+}
+
+#top {
+  position: top center;
+  width: 94px;
+  height: 9px;
+  background: #cd7e14;
+  box-shadow: 0 1px 0 rgba(0,0,0,.12);
+  z-index: 3;
+}
+
+#support {
+  position: absolute;
+  top: 0px;
+  left: 38px;
+  width: 23px;
+  height: 71px;
+  background: #cd7e14;
+  border-radius: 40% 40% 50% 50% / 55% 55% 45% 45%;
+  z-index: 1;
+}
+
+#stand {
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  width: 39px;
+  height: 25px;
+  background: #cd7e14;
+  clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%);
+  z-index: 1;
+}
+
+#bench-left {
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+  width: 43px;
+  height: 95px;
+}
+
+#upholstery-left::before {
+    content: '';
+    position: absolute;
+    right: 15.5px;
+    top: 0;
+    width: 15px; /* ширина обрезки */
+    height: 100%;
+    background: rgb(200, 220, 200); /* цвет фона контейнера */
+    z-index: 3;
+}
+#upholstery-right::before {
+    content: '';
+    position: absolute;
+    left: 13px;
+    top: 0;
+    width: 17px; /* ширина обрезки */
+    height: 100%;
+    background: rgb(200, 220, 200); /* цвет фона контейнера */
+    z-index: 3;
+}
+
+#upholstery-left {
+    inset: -50px;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    height: 99px;
+    border-left: none;
+    border-top: none;
+    border-right: 5px solid #b76b2b;
+    border-bottom: 0;
+    border-radius: 100px 100px 100px 0;
+    mask: linear-gradient(to right, transparent 20px, black 20px);
+    -webkit-mask: linear-gradient(to right, transparent 20px, black 20px);
+
+    clip-path: polygon(20px 0, 100% 0, 100% 100%, 20px 100%);
+}
+
+#mat-left {
+  position: absolute;
+  left: 27.5px;
+  bottom: 39px;
+  width: 32px;
+  height: 7px;
+  background:
+    radial-gradient(circle, #6a3711 0 2px, transparent 2px) -5px 50%/16px 16px no-repeat,
+    radial-gradient(circle, #6a3711 0 2px, transparent 2px) 5px 50%/16px 16px no-repeat,
+    radial-gradient(circle, #6a3711 0 2px, transparent 2px) 15px 50%/16px 16px no-repeat,
+    #c77432;
+  z-index: 2;
+}
+
+#peg-left {
+  position: absolute;
+  left: 49px;
+  bottom: 0;
+  width: 5px;
+  height: 41px;
+  background: #b76b2b;
+  z-index: 1;
+}
+
+#bench-right {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  width: 83px;
+  height: 131px;
+}
+
+#upholstery-right {
+  position: absolute;
+  inset: -50px;
+  left: 50px;
+  top: 40px;
+  height: 99px;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 4px solid #b76b2b;
+  border-radius: 80px 80px 0 80px;
+}
+
+#mat-right {
+  position: absolute;
+  right: 28.5px;
+  bottom: 39px;
+  width: 31.5px;
+  height: 7px;
+  background:
+    radial-gradient(circle, #6a3711 0 2px, transparent 2px) 3px 50%/16px 16px no-repeat,
+    radial-gradient(circle, #6a3711 0 2px, transparent 2px) 12px 50%/16px 16px no-repeat,
+    radial-gradient(circle, #6a3711 0 2px, transparent 2px) 21px 50%/16px 16px no-repeat,
+    #c77432;
+  z-index: 2;
+}
+
+#peg-right {
+  position: absolute;
+  right: 49px;
+  bottom: 0;
+  width: 5px;
+  height: 41px;
+  background: #b76b2b;
+  z-index: 1;
+}

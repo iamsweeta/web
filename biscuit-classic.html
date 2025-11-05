@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классический бисквит - BestCuit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="log.png">
+</head>
+<body data-biscuit-type="classic">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="biscuits.html" class="nav-link">Все бисквиты</a></li>
+                        <li><a href="calculator.html" class="nav-link">Калькулятор</a></li>
+                        <li><a href="tasks.html" class="nav-link">Мои работы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <span>→</span>
+                <a href="biscuits.html">Все бисквиты</a>
+                <span>→</span>
+                <span>Классический бисквит</span>
+            </nav>
+
+            <article class="recipe-article">
+                <header class="recipe-header">
+                    <div class="recipe-hero">
+                        <div class="recipe-image-large">
+                            <div class="image-placeholder large">
+                                <img src="class.png" alt="Бисквит" width="400" class="biscuit-image-l">
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h1>Классический бисквит</h1>
+                            <p class="recipe-description">Универсальная основа для большинства тортов. Нежный, воздушный, хорошо пропитывается сиропами и кремами. Идеален для начинающих кондитеров.</p>
+                            
+                            <div class="recipe-meta-grid">
+                                <div class="meta-item">
+                                    <span class="meta-label">Сложность</span>
+                                    <span class="difficulty easy">Лёгкий</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время подготовки</span>
+                                    <span class="meta-value">15 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время выпечки</span>
+                                    <span class="meta-value">25 мин</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Общее время</span>
+                                    <span class="meta-value">40 мин</span>
+                                </div>
+                               
+                                <div class="meta-item">
+                                    <span class="meta-label">Температура</span>
+                                    <span class="meta-value">180°C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="recipe-calculator">
+                    <h2>🧮 Калькулятор ингредиентов</h2>
+                    <div class="calculator-inline">
+                        <div class="calc-controls">
+                            <label for="diameter">Диаметр вашей формы (см):</label>
+                            <div class="input-group">
+                                <input type="number" id="diameter" value="20" min="10" max="40" class="form-input">
+                                <button id="calculate-btn" class="btn btn-primary">Рассчитать</button>
+                            </div>
+                        </div>
+                        <div id="calculation-message" class="calculation-message">
+                            ✓ Ингредиенты успешно пересчитаны для Ø 20 см
+                        </div>
+                    </div>
+                </section>
+
+                <div class="recipe-content-grid">
+                    <section class="ingredients-section">
+                        <h2>🥣 Ингредиенты</h2>
+                        <div class="ingredients-list">
+                            <div class="ingredient-group">
+                                <h3>Основные ингредиенты</h3>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Мука пшеничная</span>
+                                    <span class="ingredient-amount" data-base="150">150 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Сахар</span>
+                                    <span class="ingredient-amount" data-base="180">180 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Яйца куриные</span>
+                                    <span class="ingredient-amount" data-base="4">4 шт</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Сливочное масло</span>
+                                    <span class="ingredient-amount" data-base="30">30 г</span>
+                                </div>
+                            </div>
+                            <div class="ingredient-group">
+                                <h3>Дополнительные</h3>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Разрыхлитель</span>
+                                    <span class="ingredient-amount" data-base="5">5 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Ванильный сахар</span>
+                                    <span class="ingredient-amount" data-base="10">10 г</span>
+                                </div>
+                                <div class="ingredient-item">
+                                    <span class="ingredient-name">Соль</span>
+                                    <span class="ingredient-amount" data-base="1">1 г</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="instructions-section">
+                        <h2>👩‍🍳 Способ приготовления</h2>
+                        <div class="instructions-list">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Подготовка ингредиентов</h3>
+                                    <p>Достаньте яйца и масло из холодильника за 1-2 часа до приготовления. Они должны быть комнатной температуры. Муку просейте вместе с разрыхлителем.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Взбивание яиц с сахаром</h3>
+                                    <p>В чистую сухую миску разбейте яйца, добавьте сахар и ванильный сахар. Взбивайте миксером на высокой скорости 7-10 минут до получения светлой пышной массы, которая увеличится в объеме в 3-4 раза.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Добавление муки</h3>
+                                    <p>Частями добавьте просеянную муку с разрыхлителем. Аккуратно перемешивайте лопаткой движениями снизу вверх, чтобы сохранить воздушность массы. Не используйте миксер!</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Введение масла</h3>
+                                    <p>Растопите сливочное масло и остудите до комнатной температуры. Добавьте к тесту, аккуратно перемешавая. Тесто должно оставаться воздушным.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h3>Выпечка</h3>
+                                    <p>Форму для выпечки смажьте маслом и присыпьте мукой. Вылейте тесто и разровняйте. Выпекайте в разогретой до 180°C духовке 25-30 минут до золотистого цвета.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-step">
+                                <div class="step-number">6</div>
+                                <div class="step-content">
+                                    <h3>Проверка готовности</h3>
+                                    <p>Готовность проверяйте деревянной шпажкой - она должна выходить сухой. Готовый бисквит оставьте в форме на 5-10 минут, затем переверните на решетку.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="recipe-tips">
+                    <h2>💡 Профессиональные советы</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <h3>Температура ингредиентов</h3>
+                            <p>Яйца комнатной температуры лучше взбиваются и дают больший объем. Никогда не взбивайте холодные яйца!</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Правильное взбивание</h3>
+                            <p>Взбивайте яйца с сахаром до состояния "ленты" - когда масса стекает с венчика широкой лентой и держит форму.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Работа с мукой</h3>
+                            <p>Перемешивайте муку быстро, но аккуратно. Долгий замес разрушает пузырьки воздуха, и бисквит осядет.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h3>Не открывайте духовку</h3>
+                            <p>Не открывайте духовку первые 20 минут выпечки, иначе бисквит осядет от перепада температуры.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="spoon-logo">
+                        <div class="shimmer"></div>
+                        <div class="shimmer-2"></div>
+                    </div>
+                    <span class="logo-text">BestCuit</span>
+                    </div>
+                    <p class="footer-tagline">Сборник рецептов идеальных бисквитов</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Бисквиты</h4>
+                        <ul>
+                            <li><a href="biscuits.html">Все рецепты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Инструменты</h4>
+                        <ul>
+                            <li><a href="calculator.html">Калькулятор</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Помощь</h4>
+                        <ul>
+                            <li><a href="mailto:bunchuk.se@edu.spbstu.ru?subject=BestCuit: обратная связь">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2025 BestCuit.</p>
+                    <p>Сайт создан в учебных целях</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="recipe.js"></script>
+</body>
+</html>
